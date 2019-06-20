@@ -13,16 +13,16 @@ The process is the following:
   * Create a context for the user
   * Create the config file for the user and move it into the .kube directory (don't forget to set variables inside the scripts. See below)
   
-At the end of the script you will have a user created in Kubernetes and your edge node with limited access to your Kubernetes. In order to learn how to manage authorizations with RBAC you can read [my article](http://www.adaltas.com/en/?p=7097&preview=true).
+At the end of the script you will have a user created in Kubernetes and in your machine with limited access to your Kubernetes cluster. In order to learn how to manage authorizations with RBAC you can read [my article](http://www.adaltas.com/en/?p=7097&preview=true).
 
 There is two scripts.
-  * Interactive one : The script will ask you informations as the username, group, of the number of days for the valid certificate.
+  * Interactive one : The script will ask you informations as the username, group and the number of days for the valid certificate.
     * user_creation_interactive.sh
     
   * Flags One : You have to pass the argument inside the shell command
     * user_creation_flags.sh -u User -g Group -d Days
 
-You have to set the variables :
+You have to set the variables inside the bash script.  :
  * certificate_data
  * server
  
