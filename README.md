@@ -22,11 +22,11 @@ There is two scripts.
   * Flags One : You have to pass the argument inside the shell command
     * user_creation_flags.sh -u User -g Group -d Days
 
-You have to set the variables inside the bash script.  :
+You have to set the variables inside the bash script. Those information are available in your admin-cluster config. It can be found in /etc/kubernetes/admin.config :
  * certificate_data
  * server
  
- Those information are available in your admin-cluster config. It can be found in /etc/kubernetes/admin.config
+ 
 
 Usage :
  * User is mandatory    
