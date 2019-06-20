@@ -11,7 +11,7 @@ The process is the following:
   * Move all the certificates in the .certs directory
   * Create the user inside Kubernetes
   * Create a context for the user
-  * Create the config file for the user and move it into the .kube directory
+  * Create the config file for the user and move it into the .kube directory (don't forget to set variables inside the scripts. See below)
   
 At the end of the script you will have a user created in Kubernetes and your edge node with limited access to your Kubernetes. In order to learn how to manage authorizations with RBAC you can read [my article](http://www.adaltas.com/en/?p=7097&preview=true).
 
