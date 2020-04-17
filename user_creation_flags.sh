@@ -16,6 +16,10 @@ create_user() {
 	#Create the user
 	printf "User creation\n"
 	useradd -m $user
+	if [ $? -ne 0 ]; then
+	  useradd $user
+	  mkdir -p /home/$user/
+	fi
 
 	#Create private Key for the user
 	printf "Private Key creation\n"
